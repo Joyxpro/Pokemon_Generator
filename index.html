@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Card Generator</title>
+  </head>
+  <body>
+    <img src="./assets//music.svg" alt="MUSIC ICON" id="musicIcon" />
+    <audio
+      src="./assets/Pokemon.mp3"
+      id="backgroundMusic"
+      preload="auto"
+    ></audio>
+    <div class="container">
+      <h1>Pokemon Card Generator</h1>
+      <form>
+        <input type="text" id="pokemonName" placeholder="Enter pokemon name" />
+        <button type="button" onclick="fetchPokemon()" id="search">
+          Search Pokemon
+          <img src="./assets/pokeball.svg" alt="pokeball" width="20" />
+        </button>
+      </form>
+      <div class="cards">
+        <div class="card">
+          <img
+            src=""
+            class="pokemonSprite"
+            id="pokemonSprite"
+          />
+        </div>
+        <div class="card">
+          <img
+            src=""
+            class="pokemonSprite"
+            id="pokemonSpriteShiny"
+          />
+        </div>
+        </div>
+        <div class="info"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
